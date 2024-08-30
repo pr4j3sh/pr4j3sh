@@ -4,6 +4,6 @@ import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
-  site: "",
+  site: "https://elevenco.vercel.app",
   integrations: [mdx(), sitemap(), tailwind()],
 });
