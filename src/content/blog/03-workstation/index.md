@@ -3,11 +3,11 @@ title: Workstation
 description: Crafting Code, One Keystroke at a Time
 date: Aug 31 2024
 ---
-![[home.png]]
+![Home](./home.png)
 
 In a world where efficiency and customization meet, my [Dell Inspiron](https://www.dell.com/support/kbdoc/en-in/000181897/inspiron-5502-5509-product-overview) i3 (11th Gen) with 8GB RAM and a 500GB M.2 NVMe PCIe SSD stands as the powerhouse of my development environment. Running [Arch](https://archlinux.org/) Linux with the sleek and minimalist [i3wm](https://i3wm.org/), my setup is tailored for both speed and simplicity.
 
-![[term.png]]
+![Terminal](./term.png)
 ## Tools of the Trade
 - **[Kitty](https://sw.kovidgoyal.net/kitty/)**: My terminal of choice, blending performance with aesthetics.
 - **[Neovim](https://neovim.io/)** with **[LazyVim](https://www.lazyvim.org/)**: A modern editor setup that’s as flexible as it is powerful.
