@@ -1,1 +1,6 @@
-{}
+{
+  "cssTheme": "Catppuccin",
+  "interfaceFontFamily": "Ubuntu Nerd Font",
+  "textFontFamily": "Ubuntu Nerd Font",
+  "monospaceFontFamily": "FiraCode Nerd Font Mono"
+}

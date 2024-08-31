@@ -4,46 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "13332753f42b0a06",
+        "id": "536280a96bf17fc4",
         "type": "tabs",
         "children": [
           {
-            "id": "5ad5db20aa9ac3dd",
+            "id": "3db1f8c20c90417f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/01-first-few-steps.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "665f34eec1eb0743",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "blog/02-flow.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "ada5b86348168846",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "5a13e4d8cb695ceb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "blog/02-flow.md",
+                "file": "blog/03-workstation/index.md",
                 "mode": "source",
                 "source": false
               }
@@ -115,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/02-flow.md",
+                "file": "blog/03-workstation/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/02-flow.md",
+                "file": "blog/03-workstation/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/02-flow.md"
+                "file": "blog/03-workstation/index.md"
               }
             }
           }
@@ -176,8 +146,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5a13e4d8cb695ceb",
+  "active": "3db1f8c20c90417f",
   "lastOpenFiles": [
+    "home.png",
+    "blog/03-workstation/term.png",
+    "blog/03-workstation/home.png",
+    "blog/03-workstation",
+    "blog/03-workstation/index.md",
     "blog/01-first-few-steps.md",
     "blog/02-flow.md"
   ]
