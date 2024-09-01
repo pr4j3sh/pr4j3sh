@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/03-workstation/index.md",
+                "file": "blog/04-evolution-of-frontend-web-development/index.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "38a1134c0178e2fd",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/03-workstation/index.md",
+                "file": "blog/04-evolution-of-frontend-web-development/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/03-workstation/index.md",
+                "file": "blog/04-evolution-of-frontend-web-development/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/03-workstation/index.md"
+                "file": "blog/04-evolution-of-frontend-web-development/index.md"
               }
             }
           }
@@ -148,11 +149,13 @@
   },
   "active": "3db1f8c20c90417f",
   "lastOpenFiles": [
+    "blog/03-workstation/index.md",
+    "blog/04-evolution-of-frontend-web-development/index.md",
+    "blog/04-evolution-of-frontend-web-development",
     "home.png",
     "blog/03-workstation/term.png",
     "blog/03-workstation/home.png",
     "blog/03-workstation",
-    "blog/03-workstation/index.md",
     "blog/01-first-few-steps.md",
     "blog/02-flow.md"
   ]
