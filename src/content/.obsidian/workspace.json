@@ -11,8 +11,12 @@
             "id": "64cbcb9f95351091",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "projects/cookie-tracker/index.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "projects/cookie-tracker/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "projects/cookie-tracker/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "projects/portfolio/index.md"
+                "file": "projects/cookie-tracker/index.md"
               }
             }
           }
@@ -140,19 +146,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0d0b450bc8672699",
+  "active": "64cbcb9f95351091",
   "lastOpenFiles": [
+    "blog/05-vite-github-pages.md",
+    "blog/04-evolution-of-frontend-web-development/index.md",
+    "blog/03-workstation/index.md",
+    "blog/02-flow.md",
+    "blog/01-first-few-steps.md",
     "projects/cookie-tracker/index.md",
     "projects/portfolio/index.md",
     "projects/cookie-tracker",
-    "blog/04-evolution-of-frontend-web-development/index.md",
-    "blog/03-workstation/index.md",
     "blog/04-evolution-of-frontend-web-development",
     "home.png",
     "blog/03-workstation/term.png",
     "blog/03-workstation/home.png",
-    "blog/03-workstation",
-    "blog/01-first-few-steps.md",
-    "blog/02-flow.md"
+    "blog/03-workstation"
   ]
 }
