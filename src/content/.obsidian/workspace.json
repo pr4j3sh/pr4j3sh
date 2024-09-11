@@ -11,12 +11,8 @@
             "id": "64cbcb9f95351091",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "projects/portfolio/index.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "projects/portfolio/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "projects/portfolio/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +140,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "64cbcb9f95351091",
+  "active": "0d0b450bc8672699",
   "lastOpenFiles": [
     "projects/cookie-tracker/index.md",
     "projects/portfolio/index.md",
