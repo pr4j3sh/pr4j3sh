@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "536280a96bf17fc4",
+        "id": "cb8d98e804cb7a41",
         "type": "tabs",
         "children": [
           {
-            "id": "3db1f8c20c90417f",
+            "id": "64cbcb9f95351091",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/04-evolution-of-frontend-web-development/index.md",
+                "file": "projects/portfolio/index.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "38a1134c0178e2fd",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/04-evolution-of-frontend-web-development/index.md",
+                "file": "projects/portfolio/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/04-evolution-of-frontend-web-development/index.md",
+                "file": "projects/portfolio/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/04-evolution-of-frontend-web-development/index.md"
+                "file": "projects/portfolio/index.md"
               }
             }
           }
@@ -147,10 +146,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3db1f8c20c90417f",
+  "active": "64cbcb9f95351091",
   "lastOpenFiles": [
-    "blog/03-workstation/index.md",
+    "projects/cookie-tracker/index.md",
+    "projects/portfolio/index.md",
+    "projects/cookie-tracker",
     "blog/04-evolution-of-frontend-web-development/index.md",
+    "blog/03-workstation/index.md",
     "blog/04-evolution-of-frontend-web-development",
     "home.png",
     "blog/03-workstation/term.png",
