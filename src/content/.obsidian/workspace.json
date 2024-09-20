@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "cb8d98e804cb7a41",
+        "id": "8286bbfb9aa5635e",
         "type": "tabs",
         "children": [
           {
-            "id": "64cbcb9f95351091",
+            "id": "dc1401631beb664d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "projects/cookie-tracker/index.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "projects/cookie-tracker/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "projects/cookie-tracker/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "projects/cookie-tracker/index.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,14 +138,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "64cbcb9f95351091",
+  "active": "dc1401631beb664d",
   "lastOpenFiles": [
+    "projects/cookie-tracker/index.md",
+    "projects/eventsphere/index.md",
+    "blog/03-workstation/index.md",
+    "projects/eventsphere/home.png",
+    "projects/eventsphere",
     "blog/05-vite-github-pages.md",
     "blog/04-evolution-of-frontend-web-development/index.md",
-    "blog/03-workstation/index.md",
     "blog/02-flow.md",
     "blog/01-first-few-steps.md",
-    "projects/cookie-tracker/index.md",
     "projects/portfolio/index.md",
     "projects/cookie-tracker",
     "blog/04-evolution-of-frontend-web-development",
