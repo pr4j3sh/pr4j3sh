@@ -11,8 +11,12 @@
             "id": "dc1401631beb664d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "projects/query/index.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "projects/query/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "projects/query/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "projects/query/index.md"
+              }
             }
           }
         ]
@@ -140,8 +148,13 @@
   },
   "active": "dc1401631beb664d",
   "lastOpenFiles": [
+    "projects/query/home.png",
     "projects/cookie-tracker/index.md",
+    "projects/query/index.md",
+    "projects/query",
     "projects/eventsphere/index.md",
+    "projects/bingehub/demo.mp4",
+    "projects/bingehub",
     "blog/03-workstation/index.md",
     "projects/eventsphere/home.png",
     "projects/eventsphere",
