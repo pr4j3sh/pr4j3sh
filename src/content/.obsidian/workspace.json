@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "6b7231e3b8197243",
+        "id": "13024867325d8140",
         "type": "tabs",
         "children": [
           {
-            "id": "1c1cf56b8d1ee0d8",
+            "id": "207c5cc0d54d411d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "projects/bingehub/index.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "projects/bingehub/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "projects/bingehub/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "projects/bingehub/index.md"
+              }
             }
           }
         ]
@@ -138,15 +146,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1c1cf56b8d1ee0d8",
+  "active": "207c5cc0d54d411d",
   "lastOpenFiles": [
+    "projects/bingehub/demo.mp4",
+    "projects/bingehub/index.md",
     "blog/05-vite-github-pages.md",
     "projects/query/index.md",
     "projects/query/home.png",
     "projects/cookie-tracker/index.md",
     "projects/query",
     "projects/eventsphere/index.md",
-    "projects/bingehub/demo.mp4",
     "projects/bingehub",
     "blog/03-workstation/index.md",
     "projects/eventsphere/home.png",
