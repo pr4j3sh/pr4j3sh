@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projects/bingehub/index.md",
+                "file": "blog/06-tortoise-hare-algo.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "projects/bingehub/index.md",
+                "file": "blog/06-tortoise-hare-algo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "projects/bingehub/index.md",
+                "file": "blog/06-tortoise-hare-algo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "projects/bingehub/index.md"
+                "file": "blog/06-tortoise-hare-algo.md"
               }
             }
           }
@@ -148,8 +148,9 @@
   },
   "active": "207c5cc0d54d411d",
   "lastOpenFiles": [
-    "projects/bingehub/demo.mp4",
     "projects/bingehub/index.md",
+    "blog/06-tortoise-hare-algo.md",
+    "projects/bingehub/demo.mp4",
     "projects/bingehub/demo.png",
     "blog/05-vite-github-pages.md",
     "projects/query/index.md",
