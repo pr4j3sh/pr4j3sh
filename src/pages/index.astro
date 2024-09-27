@@ -6,6 +6,7 @@ import ArrowCard from "@components/ArrowCard.astro";
 import Link from "@components/Link.astro";
 import { dateRange } from "@lib/utils";
 import { SITE, HOME, SOCIALS } from "@consts";
+import { Icon } from "astro-icon/components";
 
 const blog = (await getCollection("blog"))
   .filter(post => !post.data.draft)
@@ -42,10 +43,57 @@ const work = await Promise.all(
       <section>
         <article class="space-y-4">
           <p class="animate">
-          I learn about technologies and work with them.
+          I like to learn about technologies and experiment with them.
+          </p>
+          <p class="animate">
+            I can help you create your next website or android app.
           </p>
         </article>
+
+
       </section>
+
+          <a href="/quote" class="animate w-fit flex items-center gap-x-1 px-5 py-1.5 flex-nowrap rounded border border-black/15 dark:border-white/20 hover:bg-black/5 dark:hover:bg-white/5 hover:text-black dark:hover:text-white transition-colors duration-300 ease-in-out no-underline">
+  <div class="text-sm font-bold">
+              Qoute now
+  </div>
+          <Icon name="ri:arrow-right-line" />
+</a>
+<section class=" animate space-y-4">
+        <div class="flex items-center justify-between space-x-4">
+  <Icon name="ri:reactjs-fill" class="h-10 w-10 text-gray-400" />
+  <Icon name="ri:nextjs-fill" class="h-10 w-10 text-gray-400" />
+  <Icon name="tabler:brand-vite" class="h-10 w-10 text-gray-400" />
+  <Icon name="mdi:webpack" class="h-10 w-10 text-gray-400" />
+  <Icon name="mdi:language-typescript" class="h-10 w-10 text-gray-400" />
+  <Icon name="ri:javascript-fill" class="h-10 w-10 text-gray-400" />
+        </div>
+
+        <div class="flex items-center justify-between space-x-4">
+  <Icon name="ri:html5-fill" class="h-10 w-10 text-gray-400" />
+  <Icon name="ri:css3-fill" class="h-10 w-10 text-gray-400" />
+  <Icon name="mdi:sass" class="h-10 w-10 text-gray-400" />
+  <Icon name="ri:tailwind-css-fill" class="h-10 w-10 text-gray-400" />
+  <Icon name="ri:bootstrap-fill" class="h-10 w-10 text-gray-400" />
+  <Icon name="mdi:material-ui" class="h-10 w-10 text-gray-400" />
+        </div>
+        <div class="flex items-center justify-between space-x-4">
+  <Icon name="ri:nodejs-fill" class="h-10 w-10 text-gray-400" />
+  <Icon name="simple-icons:express" class="h-10 w-10 text-gray-400" />
+  <Icon name="dashicons:rest-api" class="h-10 w-10 text-gray-400" />
+  <Icon name="mdi:graphql" class="h-10 w-10 text-gray-400" />
+  <Icon name="mdi:arch" class="h-10 w-10 text-gray-400" />
+  <Icon name="mdi:git" class="h-10 w-10 text-gray-400" />
+        </div>
+        <div class="flex items-center justify-between space-x-4">
+  <Icon name="tabler:brand-mongodb" class="h-10 w-10 text-gray-400" />
+  <Icon name="ri:firebase-fill" class="h-10 w-10 text-gray-400" />
+  <Icon name="ri:supabase-fill" class="h-10 w-10 text-gray-400" />
+  <Icon name="tabler:brand-react-native" class="h-10 w-10 text-gray-400" />
+  <Icon name="simple-icons:expo" class="h-10 w-10 text-gray-400" />
+  <Icon name="tabler:brand-kotlin" class="h-10 w-10 text-gray-400" />
+        </div>
+</section>
 
       <section class="animate space-y-6">
         <div class="flex flex-wrap gap-y-2 items-center justify-between">

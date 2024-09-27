@@ -14,6 +14,11 @@ export const HOME: Metadata = {
     "This is Prajesh Pratap Singh's minimal and lightweight place for blogs and projects.",
 };
 
+export const QUOTE: Metadata = {
+  TITLE: "Qoute",
+  DESCRIPTION: "Describe what you want me to create for you.",
+};
+
 export const BLOG: Metadata = {
   TITLE: "Blog",
   DESCRIPTION: "A collection of articles on topics I am passionate about.",

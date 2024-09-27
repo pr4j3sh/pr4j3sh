@@ -100,6 +100,9 @@ const { title, description, image = "/nano.png" } = Astro.props;
       toggleTheme(window.matchMedia("(prefers-color-scheme: dark)").matches);
     });
 
+    const today = new Date().toISOString().split("T")[0];
+    document.getElementById("deadline").value = today;
+
     window.matchMedia("(prefers-color-scheme: dark)")
       .addEventListener("change", event => {
         if (localStorage.theme === "system") {
@@ -174,6 +177,42 @@ function toggleTheme(dark) {
       toggleTheme(window.matchMedia("(prefers-color-scheme: dark)").matches);
     }
   }
+
+function handleSubmit(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const projectName = document.getElementById("project-name").value;
+  const deadline = document.getElementById("deadline").value;
+  const budget = document.getElementById("budget").value;
+  const projectType = document.getElementById("project-type").value;
+  const features = Array.from(document.querySelectorAll("input[name=\"features\"]:checked")).map(el => el.value);
+  const description = document.getElementById("description").value;
+
+  // Log values
+  console.log({ 
+    name, 
+    email, 
+    projectName, 
+    deadline, 
+    budget, 
+    projectType, 
+    features, 
+    description 
+  });
+
+  // Clear form values
+  const today = new Date().toISOString().split("T")[0];
+  document.getElementById("name").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("project-name").value = "";
+  document.getElementById("deadline").value = today;
+  document.getElementById("budget").value = "";
+  document.getElementById("project-type").value = "web-development";
+  document.querySelectorAll("input[name=\"features\"]").forEach(el => el.checked = false);
+  document.getElementById("description").value = "";
+}
 
   document.addEventListener("DOMContentLoaded", () => init());
   document.addEventListener("astro:after-swap", () => init());
