@@ -281,8 +281,6 @@ import { QUOTE } from "@consts";
 
       // Logging the response status and response data
       console.log("Response Status:", res.status);
-      const responseData = await res.json();
-      console.log("Response Data:", responseData);
 
       (document.getElementById("btnText") as HTMLButtonElement).innerHTML =
         `Sent`;
