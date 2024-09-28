@@ -191,10 +191,11 @@ import { QUOTE } from "@consts";
         <!-- Submit Button -->
         <div id="alertBox" class="animate"></div>
         <button
+          id="btnText"
           type="submit"
-          class="w-fit flex items-center gap-x-1 px-5 py-1.5 flex-nowrap rounded border border-black/15 dark:border-white/20 hover:bg-black/5 dark:hover:bg-white/5 hover:text-black dark:hover:text-white transition-colors duration-300 ease-in-out no-underline text-sm font-bold"
+          class="animate w-fit flex items-center gap-x-2 px-5 py-1.5 flex-nowrap rounded border border-black/15 dark:border-white/20 hover:bg-black/5 dark:hover:bg-white/5 hover:text-black dark:hover:text-white transition-colors duration-300 ease-in-out font-bold text-sm"
         >
-          Submit
+          Send
         </button>
       </form>
     </article>
@@ -202,9 +203,10 @@ import { QUOTE } from "@consts";
 </PageLayout>
 <script>
   import { getFirestore, collection, addDoc } from "firebase/firestore";
-  import { app } from "../../firebase/client.ts";
+  import { app } from "../../lib/firebase.ts";
 
   const db = getFirestore(app);
+
   const today = new Date().toISOString().split("T")[0];
   (document.getElementById("deadline") as HTMLInputElement).value = today;
 
@@ -213,11 +215,16 @@ import { QUOTE } from "@consts";
   function hideAlert() {
     setTimeout(() => {
       (document.getElementById("alertBox") as HTMLDivElement).innerHTML = ``;
+      (document.getElementById("btnText") as HTMLButtonElement).innerHTML =
+        `Send`;
     }, 5000);
   }
 
   form.addEventListener("submit", async (e: Event) => {
     e.preventDefault();
+
+    (document.getElementById("btnText") as HTMLButtonElement).innerHTML =
+      `Sending...`;
 
     const name = (document.getElementById("name") as HTMLInputElement).value;
     const email = (document.getElementById("email") as HTMLInputElement).value;
@@ -238,17 +245,19 @@ import { QUOTE } from "@consts";
       document.getElementById("description") as HTMLTextAreaElement
     ).value;
 
+    const data = {
+      name,
+      email,
+      projectName,
+      deadline,
+      budget,
+      projectType,
+      features,
+      description,
+    };
+
     try {
-      await addDoc(collection(db, "tasks"), {
-        name,
-        email,
-        projectName,
-        deadline,
-        budget,
-        projectType,
-        features,
-        description,
-      });
+      await addDoc(collection(db, "tasks"), data);
 
       (document.getElementById("alertBox") as HTMLDivElement).innerHTML = `
       <div class="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-stone-800 dark:text-green-400" role="alert">
@@ -258,6 +267,29 @@ import { QUOTE } from "@consts";
       (document.getElementById("alertBox") as HTMLDivElement).innerHTML = `
       <div class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-stone-800 dark:text-red-400" role="alert">
         Unable to submit form.
+      </div>`;
+    }
+
+    try {
+      await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      (document.getElementById("btnText") as HTMLButtonElement).innerHTML =
+        `Sent`;
+
+      (document.getElementById("alertBox") as HTMLDivElement).innerHTML = `
+      <div class="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-stone-800 dark:text-green-400" role="alert">
+        Email sent!
+      </div>`;
+    } catch (e) {
+      (document.getElementById("alertBox") as HTMLDivElement).innerHTML = `
+      <div class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-stone-800 dark:text-red-400" role="alert">
+        Unable to send an email.
       </div>`;
     }
 
