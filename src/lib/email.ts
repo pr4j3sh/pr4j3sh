@@ -1,5 +1,6 @@
 import ejs from "ejs";
 import fs from "fs";
+import path from "path";
 import { createTransport } from "nodemailer";
 import type { Transporter } from "nodemailer";
 
@@ -46,8 +47,12 @@ async function getEmailTransporter(): Promise<Transporter> {
 }
 
 async function parseEmailTemplate(params: Email): Promise<string> {
+  const templatePath = path.resolve(
+    new URL(".", import.meta.url).pathname,
+    "template/index.ejs",
+  );
   try {
-    const rawTemplate = fs.readFileSync(`./src/template/index.ejs`, "utf8");
+    const rawTemplate = fs.readFileSync(templatePath, "utf8");
     return ejs.render(rawTemplate, params);
   } catch (error) {
     console.error("Error reading email template:", error);
