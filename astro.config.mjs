@@ -7,5 +7,6 @@ import icon from "astro-icon";
 // https://astro.build/config
 export default defineConfig({
   site: "https://elevenco.vercel.app",
-  integrations: [mdx(), sitemap(), tailwind(), icon()]
+  integrations: [mdx(), sitemap(), tailwind(), icon()],
 });
+

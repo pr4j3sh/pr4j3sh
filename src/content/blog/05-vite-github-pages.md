@@ -3,6 +3,7 @@ title: Simplifying Deployment with Vite and GitHub Pages
 description: Efficiently deploy your Vite app to GitHub Pages with a streamlined GitHub Actions workflow
 date: Sep 11 2024
 ---
+
 Deploying a static site can often seem daunting, but with Vite and GitHub Pages, it becomes a breeze. Here’s a step-by-step guide to setting up your Vite vanilla template for deployment using GitHub Pages, with an automated GitHub Actions workflow.
 
 ## Configure Your Vite Project
@@ -11,8 +12,8 @@ First, you'll need to adjust the `vite.config.js` to ensure your project builds 
 
 ```javascript
 export default {
-  base: "/<repo_name>/"
-}
+  base: "/<repo_name>/",
+};
 ```
 
 Replace `<repo_name>` with your actual repository name.
@@ -73,6 +74,7 @@ jobs:
 ```
 
 Replace `SECRET_ONE`, `SECRET_TWO`, and `SECRET_THREE` with your actual secret names.
+
 ## Add Environment Variables
 
 Navigate to your repository’s settings:
@@ -92,3 +94,4 @@ git push origin master
 ```
 
 With these steps, your Vite project is set up to automatically deploy to GitHub Pages with each push to the master branch, thanks to the powerful combination of Vite and GitHub Actions. Happy deploying
+

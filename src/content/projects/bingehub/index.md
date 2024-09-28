@@ -5,6 +5,7 @@ date: Sep 27 2024
 demoURL: https://www.npmjs.com/package/bingehub-cli
 repoURL: https://github.com/prajeshElEvEn/bingehub-cli
 ---
+
 ![Demo](./demo.png)
 
 In the age of on-demand streaming, finding the perfect movie or series to watch can sometimes feel like a chore. Whether it's deciding between multiple services or navigating clunky interfaces, the search for entertainment should be fun, not frustrating. That’s why we created **BingeHub**—a sleek, command-line application designed to streamline the process of discovering and watching movies or series.
@@ -25,7 +26,6 @@ Whether you’re on Windows, macOS, or Linux, BingeHub ensures you get the conte
 ## How Does BingeHub Work?
 
 1. **Search**: Simply run BingeHub from your terminal and type in the name of the movie or series you want to watch. You’ll be presented with a list of matching titles from TMDB.
-   
 2. **Select**: Choose the exact movie or episode from the options provided. For series, you can even select which season and episode you’d like to watch.
 
 3. **Stream**: BingeHub will automatically launch the stream in your browser using the best available source.
@@ -33,7 +33,6 @@ Whether you’re on Windows, macOS, or Linux, BingeHub ensures you get the conte
 ## Key Features
 
 - **Movie Search and Streaming**: Easily search for any movie in the TMDB database and start streaming instantly.
-  
 - **Series with Episodes**: Browse through seasons and episodes of your favorite shows, from classics to the latest releases.
 
 - **Platform-Agnostic**: BingeHub works with Windows (`start`), macOS (`open`), and Linux (`xdg-open`), making it versatile across all operating systems.
@@ -45,11 +44,13 @@ Whether you’re on Windows, macOS, or Linux, BingeHub ensures you get the conte
 Setting up BingeHub is a breeze. Here’s a quick guide to getting it up and running on your machine:
 
 1. **Install via npm**: If you have Node.js installed, you can easily install BingeHub using npm:
+
    ```bash
    npm install -g bingehub
    ```
 
 2. **Run BingeHub**: Once installed, launch BingeHub by typing:
+
    ```bash
    bingehub
    ```
@@ -68,3 +69,4 @@ We’re excited about the potential of BingeHub, and we’re continuously workin
 If you're a movie or series enthusiast who enjoys a minimalist approach, BingeHub is the perfect tool for you. It cuts through the noise of traditional streaming platforms and provides a simple, fast, and intuitive way to watch content directly from your terminal.
 
 So, why wait? Install BingeHub today and start streaming smarter, not harder!
+

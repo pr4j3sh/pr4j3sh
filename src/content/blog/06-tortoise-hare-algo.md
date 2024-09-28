@@ -3,6 +3,7 @@ title: The Tortoise and Hare Method
 description: Finding the Middle Element of a Linked List
 date: Sep 27 2024
 ---
+
 In the world of data structures, linked lists play a crucial role. One common task is to find the middle element of a linked list efficiently. While there are several methods to achieve this, the **Tortoise and Hare** algorithm, introduced by **Robert W. Floyd**, stands out as one of the most effective. In this post, we'll explore how this method works, its advantages, and provide a code implementation.
 
 ## Understanding the Problem
@@ -12,6 +13,7 @@ Given the head of a singly linked list, our goal is to find the middle node. If 
 ## The Tortoise and Hare Approach
 
 The Tortoise and Hare algorithm employs two pointers that traverse the list at different speeds:
+
 - The **Tortoise** moves one step at a time.
 - The **Hare** moves two steps at a time.
 
@@ -51,6 +53,7 @@ ListNode* findMiddle(ListNode* head) {
 ```
 
 ### How the Code Works:
+
 1. We initialize two pointers, `slow` and `fast`, both starting at the head of the list.
 2. We loop through the list as long as `fast` and `fast->next` are not null.
 3. Inside the loop, we move the `slow` pointer one step and the `fast` pointer two steps.
@@ -65,3 +68,4 @@ To solidify your understanding of this algorithm, practice solving problems rela
 The Tortoise and Hare method is a powerful technique for finding the middle of a linked list with minimal overhead. Its efficiency and simplicity make it a favorite among programmers tackling linked list problems. Whether you're preparing for coding interviews or working on your own projects, understanding this algorithm is invaluable.
 
 Feel free to experiment with the code and explore variations of linked list operations. Happy coding!
+

@@ -3,6 +3,7 @@ title: Evolution of Frontend Web Development
 description: From Static Pages to Dynamic Experiences
 date: Sep 1 2024
 ---
+
 ## The Early Days: Static Beginnings
 
 The journey of frontend web development started with HTML, the backbone of early web pages. Initially, HTML was used to create static pages, where content was simply displayed with little to no interaction. These were the days when the web was a mere collection of text and images, delivering information without much flair.
@@ -38,3 +39,4 @@ As the demand for faster and more SEO-friendly web applications grew, Server-Sid
 ## Conclusion: A Constantly Evolving Landscape
 
 Frontend web development has come a long way from the early days of static HTML pages. Today, it is a dynamic and ever-evolving field, with new tools, frameworks, and best practices emerging regularly. As the web continues to grow, so too will the possibilities for creating engaging and interactive user experiences. The future of frontend development is bright, and the journey is far from over.
+
