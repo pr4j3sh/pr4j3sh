@@ -7,18 +7,15 @@ import { readingTime } from "@lib/utils";
 import BackToPrev from "@components/BackToPrev.astro";
 import Link from "@components/Link.astro";
 
-export async function getStaticPaths() {
-  const projects = (await getCollection("projects"))
-    .filter((post) => !post.data.draft)
-    .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
-  return projects.map((project) => ({
-    params: { slug: project.slug },
-    props: project,
-  }));
-}
+const projects = (await getCollection("projects"))
+  .filter((post) => !post.data.draft)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 type Props = CollectionEntry<"projects">;
 
-const project = Astro.props;
+const { slug } = Astro.params;
+const project = projects.find((page) => page.slug === slug);
+if (!project) return Astro.redirect("/404");
+
 const { Content } = await project.render();
 ---
 
@@ -63,4 +60,3 @@ const { Content } = await project.render();
     </article>
   </Container>
 </PageLayout>
-
