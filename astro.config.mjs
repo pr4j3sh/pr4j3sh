@@ -11,5 +11,8 @@ export default defineConfig({
   site: "https://elevenco.vercel.app",
   integrations: [mdx(), sitemap(), tailwind(), icon()],
   output: "server",
-  adapter: vercel()
+  adapter: vercel({
+    includeFiles: ["src/template/index.ejs"],
+  }),
 });
+
