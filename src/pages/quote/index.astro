@@ -207,9 +207,6 @@ import { QUOTE } from "@consts";
 
   const db = getFirestore(app);
 
-  const today = new Date().toISOString().split("T")[0];
-  (document.getElementById("deadline") as HTMLInputElement).value = today;
-
   const form = document.querySelector("form") as HTMLFormElement;
 
   function hideAlert() {
@@ -309,14 +306,12 @@ import { QUOTE } from "@consts";
 
     hideAlert();
 
-    const today = new Date().toISOString().split("T")[0];
     (document.getElementById("name") as HTMLInputElement).value = "";
     (document.getElementById("email") as HTMLInputElement).value = "";
     (document.getElementById("project-name") as HTMLInputElement).value = "";
-    (document.getElementById("deadline") as HTMLInputElement).value = today;
+    (document.getElementById("deadline") as HTMLInputElement).value = "";
     (document.getElementById("budget") as HTMLInputElement).value = "";
-    (document.getElementById("project-type") as HTMLSelectElement).value =
-      "web-development";
+    (document.getElementById("project-type") as HTMLSelectElement).value = "";
     document
       .querySelectorAll("input[name='features']")
       .forEach((el) => ((el as HTMLInputElement).checked = false));
