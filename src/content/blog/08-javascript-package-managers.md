@@ -73,7 +73,7 @@ Bun is written in **Zig**, a low-level systems programming language, which contr
 To install Bun, you can use the following command:
 
 ```bash
-curl https://bun.sh/install | bash
+curl -fsSL https://bun.sh/install | bash
 ```
 
 Once Bun is installed, using it as a package manager is straightforward:
