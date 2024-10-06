@@ -3,6 +3,10 @@ import PageLayout from "@layouts/PageLayout.astro";
 import Container from "@components/Container.astro";
 import BackToPrev from "@components/BackToPrev.astro";
 import { QUOTE } from "@consts";
+import { getAnalytics, logEvent } from "firebase/analytics";
+
+const analytics = getAnalytics();
+logEvent(analytics, "visited_qoute");
 ---
 
 <PageLayout title={QUOTE.TITLE} description={QUOTE.DESCRIPTION}>
@@ -204,7 +208,9 @@ import { QUOTE } from "@consts";
 <script>
   import { getFirestore, collection, addDoc } from "firebase/firestore";
   import { app } from "../../lib/firebase.ts";
+  import { getAnalytics, logEvent } from "firebase/analytics";
 
+  const analytics = getAnalytics();
   const db = getFirestore(app);
 
   const form = document.querySelector("form") as HTMLFormElement;
@@ -255,6 +261,7 @@ import { QUOTE } from "@consts";
 
     try {
       await addDoc(collection(db, "tasks"), data);
+      logEvent(analytics, "submitted_qoute");
 
       (document.getElementById("alertBox") as HTMLDivElement).innerHTML = `
       <div class="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-stone-800 dark:text-green-400" role="alert">

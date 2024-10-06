@@ -7,6 +7,10 @@ import Link from "@components/Link.astro";
 import { dateRange } from "@lib/utils";
 import { SITE, HOME, SOCIALS } from "@consts";
 import { Icon } from "astro-icon/components";
+import { getAnalytics, logEvent } from "firebase/analytics";
+
+const analytics = getAnalytics();
+logEvent(analytics, "visited_home");
 
 const blog = (await getCollection("blog"))
   .filter((post) => !post.data.draft)
