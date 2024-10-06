@@ -3,10 +3,6 @@ import PageLayout from "@layouts/PageLayout.astro";
 import Container from "@components/Container.astro";
 import BackToPrev from "@components/BackToPrev.astro";
 import { QUOTE } from "@consts";
-import { getAnalytics, logEvent } from "firebase/analytics";
-
-const analytics = getAnalytics();
-logEvent(analytics, "visited_qoute");
 ---
 
 <PageLayout title={QUOTE.TITLE} description={QUOTE.DESCRIPTION}>
@@ -208,9 +204,10 @@ logEvent(analytics, "visited_qoute");
 <script>
   import { getFirestore, collection, addDoc } from "firebase/firestore";
   import { app } from "../../lib/firebase.ts";
-  import { getAnalytics, logEvent } from "firebase/analytics";
+  import { logEvent } from "firebase/analytics";
+  import { analytics } from "@lib/firebase";
 
-  const analytics = getAnalytics();
+  logEvent(analytics, "visited_qoute");
   const db = getFirestore(app);
 
   const form = document.querySelector("form") as HTMLFormElement;

@@ -4,10 +4,6 @@ import PageLayout from "@layouts/PageLayout.astro";
 import Container from "@components/Container.astro";
 import ArrowCard from "@components/ArrowCard.astro";
 import { PROJECTS } from "@consts";
-import { getAnalytics, logEvent } from "firebase/analytics";
-
-const analytics = getAnalytics();
-logEvent(analytics, "visited_projects");
 
 const projects = (await getCollection("projects"))
   .filter((project) => !project.data.draft)
@@ -32,3 +28,9 @@ const projects = (await getCollection("projects"))
     </div>
   </Container>
 </PageLayout>
+<script>
+  import { logEvent } from "firebase/analytics";
+  import { analytics } from "@lib/firebase";
+
+  logEvent(analytics, "visited_projects");
+</script>

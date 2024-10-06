@@ -4,10 +4,6 @@ import PageLayout from "@layouts/PageLayout.astro";
 import Container from "@components/Container.astro";
 import { dateRange } from "@lib/utils";
 import { WORK } from "@consts";
-import { getAnalytics, logEvent } from "firebase/analytics";
-
-const analytics = getAnalytics();
-logEvent(analytics, "visited_work");
 
 const collection = (await getCollection("work")).sort(
   (a, b) =>
@@ -51,3 +47,9 @@ const work = await Promise.all(
     </div>
   </Container>
 </PageLayout>
+<script>
+  import { logEvent } from "firebase/analytics";
+  import { analytics } from "@lib/firebase";
+
+  logEvent(analytics, "visited_work");
+</script>
