@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/10-cpp-web-server.md",
+                "file": "blog/11-go-server.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/10-cpp-web-server.md",
+                "file": "blog/11-go-server.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/10-cpp-web-server.md",
+                "file": "blog/11-go-server.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/10-cpp-web-server.md"
+                "file": "blog/11-go-server.md"
               }
             }
           }
@@ -148,8 +148,9 @@
   },
   "active": "207c5cc0d54d411d",
   "lastOpenFiles": [
-    "blog/08-javascript-package-managers.md",
     "blog/10-cpp-web-server.md",
+    "blog/11-go-server.md",
+    "blog/08-javascript-package-managers.md",
     "blog/07-parallel-computing.md",
     "blog/09-firebase.md",
     "blog/07-certifications/web.pdf",
