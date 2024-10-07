@@ -20,7 +20,7 @@ export async function sendEmail(options: Email): Promise<void> {
   const to = "prajesh.eleven118@gmail.com";
   const subject = "New Task";
   const html = await parseEmailTemplate(options);
-  const from = "eleven co. <onboarding@resend.dev>";
+  const from = "pr4j3sh <onboarding@resend.dev>";
   const message = { to, subject, html, from };
 
   try {
