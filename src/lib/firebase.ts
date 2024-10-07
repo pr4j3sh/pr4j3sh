@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBbrsVSz6Q7_cnU6INu-TKJrxHuwCacfyg",
+  apiKey: `${import.meta.env.FIREBASE_API_KEY}`,
   authDomain: "mine-7f634.firebaseapp.com",
   projectId: "mine-7f634",
   storageBucket: "mine-7f634.appspot.com",
