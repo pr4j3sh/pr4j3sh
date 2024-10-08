@@ -5,6 +5,7 @@ date: Oct 08 2024
 ---
 In this blog, we'll walk through creating a simple web server using Ruby on Rails that handles basic CRUD operations with HTTP methods. This includes `GET`, `POST`, `PUT`, and `DELETE` requests.
 
+Check out [source code](https://github.com/pr4j3sh/archives/tree/master/src/ruby/web/server).
 ## 1. Install Ruby on Rails
 
 Before we begin, ensure that Ruby on Rails is installed. You can install it using the following command:
