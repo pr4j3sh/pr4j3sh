@@ -69,4 +69,3 @@ We’re excited about the potential of BingeHub, and we’re continuously workin
 If you're a movie or series enthusiast who enjoys a minimalist approach, BingeHub is the perfect tool for you. It cuts through the noise of traditional streaming platforms and provides a simple, fast, and intuitive way to watch content directly from your terminal.
 
 So, why wait? Install BingeHub today and start streaming smarter, not harder!
-

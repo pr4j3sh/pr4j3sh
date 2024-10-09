@@ -29,4 +29,3 @@ For those interested, my dotfiles are publicly available on [GitHub](https://git
 ## Thank You
 
 A heartfelt thank you to all the amazing resources, tools, and communities that have guided and supported me on this journey. From the developers who created the tools I now rely on, to the countless tutorials and documentation that made the learning curve less steep—your contributions have been invaluable. Here's to continued learning and growth in this ever-evolving world of tech!
-

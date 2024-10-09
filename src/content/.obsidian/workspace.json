@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/14-js-web-server.md",
+                "file": "projects/udp/index.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/14-js-web-server.md",
+                "file": "projects/udp/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/14-js-web-server.md",
+                "file": "projects/udp/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/14-js-web-server.md"
+                "file": "projects/udp/index.md"
               }
             }
           }
@@ -148,8 +148,12 @@
   },
   "active": "207c5cc0d54d411d",
   "lastOpenFiles": [
-    "blog/13-ruby-web-server.md",
+    "projects/udp/cover.png",
+    "projects/query/index.md",
+    "projects/udp/index.md",
     "blog/14-js-web-server.md",
+    "projects/udp",
+    "blog/13-ruby-web-server.md",
     "blog/12-ruby-on-arch.md",
     "blog/11-go-server.md",
     "blog/Untitled",
@@ -168,13 +172,11 @@
     "blog/07-certifications/CertificateOfCompletion_Linux CentOS 7 Shells and Processes (1).pdf",
     "blog/07-certifications/CertificateOfCompletion_Linux CentOS 7 Overview and Installation.pdf",
     "blog/07-certifications/CertificateOfCompletion_Linux CentOS 7 Overview and Installation (2).pdf",
-    "blog/07-certifications/CertificateOfCompletion_Linux CentOS 7 Overview and Installation (1).pdf",
     "blog/06-tortoise-hare-algo.md",
     "blog/07-certifications/index.md",
     "projects/bingehub/index.md",
     "projects/bingehub/demo.png",
     "blog/05-vite-github-pages.md",
-    "projects/query/index.md",
     "projects/query/home.png",
     "projects/cookie-tracker/index.md",
     "projects/eventsphere/index.md",

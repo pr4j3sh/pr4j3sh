@@ -58,4 +58,3 @@ At **Query App**, we understand that students need **quick**, **to-the-point** r
 ## Conclusion
 
 In a world of increasing information overload, **Query App** empowers students by giving them the answers they need—fast. No more getting lost in the details. No more distractions. Just short, accurate, and actionable answers. So, the next time you're in doubt, simply **"Just Query it with Query!"**
-

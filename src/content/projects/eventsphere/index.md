@@ -71,4 +71,3 @@ Although **EventSphere** is complete, there are plenty of features I’m excited
 **EventSphere** was not only a passion project but also a way for me to enhance my development skills and learn new technologies. It’s been incredibly rewarding to see the app come to life, from conceptualization to deployment.
 
 Whether you’re looking for social gatherings, workshops, or concerts, **EventSphere** has got you covered. Try it out and explore what’s happening around you!
-

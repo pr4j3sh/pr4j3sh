@@ -3,9 +3,11 @@ title: JavaScript Web Server
 description: Creating a Web Server with Express in Node.js
 date: Oct 08 2024
 ---
+
 In this blog, we will create a simple web server using Express.js that handles basic CRUD (Create, Read, Update, Delete) operations. Let’s walk through each step with code examples for each operation.
 
 Check out [source code](https://github.com/pr4j3sh/archives/tree/master/src/js/server/server)
+
 ## 1. Install Node.js and Express
 
 First, ensure that Node.js is installed on your system. Then, set up a new project by running the following commands:
@@ -118,6 +120,7 @@ server.listen(port, hostname, () => {
 ```
 
 To run the server, use the command:
+
 ```bash
 node server.js
 ```
@@ -127,37 +130,49 @@ node server.js
 Once the server is running, you can test the CRUD operations using `curl` or tools like Postman.
 
 ### **GET Request:**
+
 ```bash
 curl http://127.0.0.1:8000/api/read
 ```
+
 Response:
+
 ```json
 { "message": "online" }
 ```
 
 ### **POST Request:**
+
 ```bash
 curl -X POST -H "Content-Type: application/json" -d '{"body":"data"}' http://127.0.0.1:8000/api/create
 ```
+
 Response:
+
 ```json
 { "message": "create", "body": "data" }
 ```
 
 ### **PUT Request:**
+
 ```bash
 curl -X PUT -H "Content-Type: application/json" -d '{"body":"updated data"}' http://127.0.0.1:8000/api/update/1
 ```
+
 Response:
+
 ```json
 { "message": "update", "body": "updated data", "id": "1" }
 ```
 
 ### **DELETE Request:**
+
 ```bash
 curl -X DELETE http://127.0.0.1:8000/api/delete/1
 ```
+
 Response:
+
 ```json
 { "message": "delete", "id": "1" }
 ```
@@ -165,3 +180,4 @@ Response:
 ## Conclusion
 
 This blog demonstrated how to set up a basic web server using Express.js and implement CRUD operations. You can build upon this example to create more complex APIs for your web applications.
+
