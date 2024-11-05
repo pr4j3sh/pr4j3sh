@@ -10,13 +10,12 @@ export const SITE: Site = {
 
 export const HOME: Metadata = {
   TITLE: "Home",
-  DESCRIPTION:
-    "This is Prajesh Pratap Singh's minimal and lightweight place for blogs and projects.",
+  DESCRIPTION: "Prajesh Pratap Singh's place for blogs, projects and learning.",
 };
 
 export const QUOTE: Metadata = {
   TITLE: "Qoute",
-  DESCRIPTION: "Describe what you want me to create for you.",
+  DESCRIPTION: "Tell me what you want me to build for you.",
 };
 
 export const BLOG: Metadata = {
@@ -26,7 +25,7 @@ export const BLOG: Metadata = {
 
 export const WORK: Metadata = {
   TITLE: "Work",
-  DESCRIPTION: "Where I have worked and what I have done.",
+  DESCRIPTION: "My experiences in industry.",
 };
 
 export const PROJECTS: Metadata = {
