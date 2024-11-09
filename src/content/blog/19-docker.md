@@ -72,3 +72,32 @@ docker build --tag ubuntu-20-ip -<<EOF
 ∙ RUN apt update && apt upgrade -y && apt install iproute2 -y
 ∙ EOF
 ```
+
+- building a volume
+```bash
+docker volume create myvolume 
+```
+- mount volume
+```bash
+docker run -it --rm --mount source=myvolume,destination=/path/to/dir/ ubuntu:20.04
+```
+- list volumes
+```bash
+docker volume ls
+```
+- remove a vol
+```bash
+docker volume rm <name/id>
+```
+- prune unused volumes
+```bash
+docker volume prune
+```
+- mount type bind
+```bash
+docker run -it --rm --mount type=bind,source=/path/in/host,destination=/path/in/container ubuntu:20.04
+```
+- can also use `-v`
+```bash
+docker run -it --rm -v path/on/host:/path/on/container ubuntu:20.04
+```
