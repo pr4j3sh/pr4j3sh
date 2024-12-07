@@ -16,6 +16,7 @@ A **Version Control System (VCS)** helps manage code changes and track project h
 
 Git is the most popular distributed VCS, known for its speed, flexibility, and branching support.
 
+Checkout [vcs source code](https://github.com/pr4j3sh/vcs) implemented in `javascript` for better understanding.
 ## How Git Works
 
 ### 1. **Repository (`git init`)**
