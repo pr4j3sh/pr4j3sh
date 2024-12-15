@@ -2,7 +2,7 @@
 title: BingeHub
 description: Stream effortlessly, binge endlessly.
 date: Sep 27 2024
-demoURL: https://www.npmjs.com/package/bingehub-cli
+demoURL: https://bingehub-movies.vercel.app/
 repoURL: https://github.com/prajeshElEvEn/bingehub-cli
 ---
 
