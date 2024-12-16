@@ -5,7 +5,6 @@ date: Sep 27 2024
 demoURL: https://bingehub-movies.vercel.app/
 repoURL: https://github.com/prajeshElEvEn/bingehub-cli
 ---
-
 ![Demo](./demo.png)
 
 In the age of on-demand streaming, finding the perfect movie or series to watch can sometimes feel like a chore. Whether it's deciding between multiple services or navigating clunky interfaces, the search for entertainment should be fun, not frustrating. That’s why we created **BingeHub**—a sleek, command-line application designed to streamline the process of discovering and watching movies or series.

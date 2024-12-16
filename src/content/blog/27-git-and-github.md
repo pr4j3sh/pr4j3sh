@@ -78,6 +78,61 @@ git mergetool
 
 Choose the version you want to keep during the merge resolution.
 
+### Conflict Example:
+When you want to add a new feature or fix a bug—no matter how big or small—you spawn a new branch to encapsulate your changes. During a conflict, the content is displayed as:
+
+```plaintext
+here is some content not affected by the conflict
+<<<<<<< main
+this is conflicted text from main
+=======
+this is conflicted text from feature branch
+>>>>>>> feature branch;
+```
+
+The content before the `=======` marker is the receiving branch, and the part after is the merging branch.
+
+### Resolve a Merge Conflict and Keep `dev` Branch Changes:
+
+1. Switch to the master branch:
+   ```bash
+   git checkout master
+   ```
+2. Modify a file (e.g., `file.txt`) and commit the change:
+   ```bash
+   echo "Change in master" > file.txt
+   git add file.txt
+   git commit -m "Change in master"
+   ```
+3. Switch to the dev branch:
+   ```bash
+   git checkout dev
+   ```
+4. Modify the same file (`file.txt`) differently and commit:
+   ```bash
+   echo "Change in dev" > file.txt
+   git add file.txt
+   git commit -m "Change in dev"
+   ```
+5. Switch back to master and merge dev:
+   ```bash
+   git checkout master
+   git merge dev
+   ```
+   You’ll see a conflict message.
+6. Use `git mergetool` to resolve the conflict:
+   ```bash
+   git mergetool
+   ```
+   Select the dev branch changes and save.
+7. Complete the merge:
+   ```bash
+   git add file.txt
+   git commit -m "Resolved conflict, keeping dev changes"
+   ```
+
+Now, your master branch has the dev changes.
+
 ## Git Merge Strategies
 
 ### Fast-Forward (FF) Merge
@@ -128,34 +183,18 @@ feature:            D --- E
 main:    A --- B --- C --- D' --- E'
 ```
 
-## Commit Messages
-
-Use the following format for commit messages:
-```
-git commit -m "type: description"
-```
-
-### Branch Naming Convention
-It's recommended to use a `type/name` format when naming branches, for example:
-```
-feature/login-page
-bugfix/issue-123
-```
-
 ## Stashing Changes
 
 Git stash allows you to save changes temporarily and switch context quickly.
 
-- Stashes modified and staged files:
+- Stash modified and staged files:
   ```bash
   git stash
   ```
-
-- Stashes untracked files as well:
+- Stash untracked files as well:
   ```bash
   git stash -u
   ```
-
 - Apply the most recent stash:
   ```bash
   git stash pop
@@ -168,13 +207,11 @@ Git stash allows you to save changes temporarily and switch context quickly.
   ```bash
   git reset --soft HEAD~1
   ```
-
 - `--mixed` resets commits and staged changes (default):
   ```bash
   git reset HEAD~1
   ```
-
-- `--hard` resets all changes, including working directory:
+- `--hard` resets all changes, including the working directory:
   ```bash
   git reset --hard HEAD~1
   ```
@@ -193,10 +230,10 @@ git revert <commit>
 Shows the difference between various file states, allowing you to review changes.
 
 ### `git reflog`
-Keeps a history of reference updates, allowing you to see all actions made in the repository, even those that are no longer visible in the history.
+Keeps a history of reference updates, allowing you to see all actions made in the repository, even those no longer visible in the history.
 
 ### `git bisect`
-Helps you identify which commit introduced a bug by using binary search. For example:
+Helps identify which commit introduced a bug using binary search:
 
 ```bash
 git bisect start
@@ -204,7 +241,10 @@ git bisect bad
 git bisect good <commit_hash>
 ```
 
-At the end of the bisect process, use `git bisect reset` to return to the original state.
+End the bisect process with:
+```bash
+git bisect reset
+```
 
 ### `git worktree`
 Allows you to work on multiple branches in different directories:
@@ -214,18 +254,39 @@ git worktree add <path> <branch_name>
 ```
 
 ### Git LFS (Large File Storage)
-Git LFS is used to track large files in your repository.
+Git LFS tracks large files in your repository.
 
 - Install Git LFS:
   ```bash
   git lfs install
   ```
-
 - Track files (e.g., PNG files):
   ```bash
   git lfs track "*.png"
   ```
 
-## Webhooks
+## Advanced Commands
 
-Webhooks allow you to subscribe to events in your software system and automatically receive data whenever those events occur. They are more efficient than polling APIs, requiring less effort and resources, and scale better for continuous integrations.
+- `git remote add origin <REMOTE_URL>`
+- Use `git fetch` instead of `git pull` to avoid unintended merges.
+- **Squash commits**: Combine commits into one for a clean history:
+  ```bash
+  git rebase -i HEAD~<number_of_commits>
+  ```
+- **Cherry-picking**: Apply a specific commit from one branch to another:
+  ```bash
+  git cherry-pick <commit_hash>
+  ```
+  Resolve conflicts if necessary and continue:
+  ```bash
+  git cherry-pick --continue
+  ```
+- **Amend last commit**: Edit the last commit:
+  ```bash
+  git commit --amend
+  ```
+- **Git patch**: An alternative to pull requests before PRs existed.
+- **Submodules**: Use a repository within a repository:
+  ```bash
+  git submodule add <url>
+  ```
