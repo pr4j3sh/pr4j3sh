@@ -1,6 +1,6 @@
 ---
 title: Design System
-description: A Dive into Design Systems
+description: A Dive into Design System
 date: Dec 16 2024
 draft: true
 ---
