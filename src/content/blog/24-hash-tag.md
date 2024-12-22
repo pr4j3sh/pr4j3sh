@@ -4,6 +4,7 @@ description: How I built hash-tag
 date: Nov 24 2024
 draft: false
 ---
+
 When building the `hash-tag` parser in Rust, the goal was to create a high-performance Markdown-to-HTML converter with seamless integration into JavaScript via WASM. Below, we explore the key logic behind the parser, with code snippets to explain how it handles various Markdown elements.
 
 #### 1. **Line-by-Line Parsing**

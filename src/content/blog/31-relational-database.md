@@ -4,6 +4,7 @@ description: A Dive into Relational Database
 date: Dec 17 2024
 draft: true
 ---
+
 arranges data in the form of tables
 rows/records/tuples
 columns/attributes/fields
@@ -17,4 +18,3 @@ sql - is a programming language that enables interaction with dbms
 Joining tables allows you to understand the relations between the data, or how the tables connect
 
 data is represented as tables with rows and columns
-

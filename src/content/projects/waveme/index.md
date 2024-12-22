@@ -5,6 +5,7 @@ date: Oct 15 2024
 demoURL: https://waveme.onrender.com/
 repoURL: https://github.com/pr4j3sh/waveme
 ---
+
 ![waveme](./cover.png)
 
 **waveme** is a simple yet powerful social media app designed to facilitate interaction between users through posts, profiles, and personalized feeds. Built using **Ruby on Rails**, **PostgreSQL**, and **TailwindCSS**, the project showcases the core features of a social media platform while leveraging modern web technologies for scalability and ease of development.
@@ -20,7 +21,6 @@ repoURL: https://github.com/pr4j3sh/waveme
 ### Core Features of WaveMe
 
 - **User Authentication**: Secure authentication is the cornerstone of any social media app. WaveMe allows users to create accounts, log in, and manage their profiles with ease. Once authenticated, users can engage with the platform's features seamlessly.
-  
 - **Textual Posts**: Users can share their thoughts and updates in the form of text-based posts. These posts are visible on the feed, allowing others to stay updated with the latest activities.
 
 - **Feed**: The feed is one of WaveMe’s central features, displaying the most recent posts from users in reverse chronological order. The clean, intuitive design ensures that users can easily browse through the latest updates from their network.
@@ -38,3 +38,4 @@ By utilizing Render’s PostgreSQL database and environment configuration tools,
 WaveMe is built with core social media functionality in mind, and the potential for future growth is vast. From adding multimedia content, such as images and videos, to implementing interactive features like comments or messaging, WaveMe is ready to evolve with its user base.
 
 Overall, WaveMe highlights the strengths of combining Rails' back-end power with the flexibility of PostgreSQL and the sleek design capabilities of TailwindCSS. It is a foundation for building more complex, feature-rich social media applications.
+

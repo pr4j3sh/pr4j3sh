@@ -26,10 +26,4 @@ Minimize Cyclomatic Complexity
  separating the application’s code from the framework’s code
  organization of the code into classes or files or components or modules
  business rules - core functionality
- If you have a performance problem, your system is slow for a single user.
-If you have a scalability problem, your system is fast for a single user but slow under heavy load.
-cap theorem
-- c - consistency
-- a - availability
-- p - partition tolerance
-Scalability is being able to handle large amounts of users/data/traffic. Performance is about speed.
+

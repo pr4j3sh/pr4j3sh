@@ -27,4 +27,3 @@ The final step in my process is publishing. Since my blog content is part of my 
 ## Conclusion
 
 Learning is a journey, and sharing what you've learned is an essential part of it. By using tools like Obsidian for note-taking and Git for publishing, I can effectively manage my learning process and contribute to the community. Whether you're a seasoned developer or just starting out, having a structured approach to learning and sharing can make a world of difference.
-

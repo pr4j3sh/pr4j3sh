@@ -4,6 +4,7 @@ description: How I built frames
 date: Oct 29 2024
 draft: false
 ---
+
 ### What is Frames?
 
 **Frames** is a tool that helps developers skip tedious setup and focus on building their products. With ready-to-use templates, custom CSS built using Tailwind, and pre-integrated utilities, Frames allows you to get started with minimal effort. Simply run a single command to generate a project from your chosen template and you're all set. Whether you need a C++, Rust, or JavaScript package, an Express server backend, or a React/Vanilla JS frontend, Frames has you covered. All templates come with detailed documentation, allowing you to quickly understand how to get the most out of them.
@@ -21,6 +22,7 @@ This will automatically clone the specified template from GitHub and set up your
 ### Components of Frames
 
 Frames includes several key components designed to simplify the development process:
+
 - **CLI**: A simple command-line interface to quickly set up projects with minimal input.
 - **UI**: Custom CSS built with Tailwind, providing a consistent and responsive design across all templates.
 - **Docs**: Comprehensive documentation that guides you through using Frames and its templates.

@@ -3,6 +3,7 @@ title: Publishing NPM Package
 description: Publish an npm Package with GitHub CI/CD
 date: Nov 06 2024
 ---
+
 Publishing an npm package can significantly enhance your JavaScript project by making it reusable and shareable with other developers. This guide will cover the essentials, from setting up two common types of npm packages to configuring GitHub Actions for automated publishing.
 
 ## Types of npm Packages
@@ -17,27 +18,32 @@ Publishing an npm package can significantly enhance your JavaScript project by m
 
 To create a CLI app, your entry file (e.g., `index.js`) needs to be configured to run directly from the command line. Here’s how:
 
-1. **Define `bin` in `package.json`**:  
+1. **Define `bin` in `package.json`**:
+
    ```json
    "bin": {
      "bingehub": "./index.js"
    }
    ```
+
    This tells npm to treat `index.js` as the main executable file for `bingehub`.
 
 2. **Add a Shebang to `index.js`**:  
    Add the following line at the top of your entry file to ensure it uses Node.js:
+
    ```javascript
    #!/usr/bin/env node
    ```
 
 3. **Make the File Executable**:  
    Run the following command to make `index.js` executable:
+
    ```bash
    chmod +x index.js
    ```
 
 ### Example `package.json` for CLI App
+
 ```json
 {
   "name": "bingehub",
@@ -58,13 +64,7 @@ To create a CLI app, your entry file (e.g., `index.js`) needs to be configured t
     "type": "git",
     "url": "https://github.com/pr4j3sh/bingehub.git"
   },
-  "keywords": [
-    "CLI",
-    "movies",
-    "series",
-    "anime",
-    "bingehub"
-  ],
+  "keywords": ["CLI", "movies", "series", "anime", "bingehub"],
   "author": "Prajesh Pratap Singh <prajesh.eleven118@gmail.com> (https://pr4j3sh.vercel.app/)",
   "license": "MIT",
   "dependencies": {
@@ -80,7 +80,9 @@ To create a CLI app, your entry file (e.g., `index.js`) needs to be configured t
 Handler libraries like **exhandlers** export reusable code, such as middleware functions, that other applications can import and use.
 
 ### Example `package.json` for Handler Library
+
 Here’s an example of the configuration for **exhandlers**:
+
 ```json
 {
   "name": "exhandlers",
@@ -118,6 +120,7 @@ Here’s an example of the configuration for **exhandlers**:
 ```
 
 > Read more about naming your package [here](https://docs.npmjs.com/package-name-guidelines)
+
 ## Publishing Your npm Package
 
 ### 1. Set Up an npm Account and Token
@@ -128,6 +131,7 @@ Here’s an example of the configuration for **exhandlers**:
 ### 2. Login Locally and Publish Manually (Optional)
 
 If you want to test publishing before setting up CI/CD, log in locally and publish with the following commands:
+
 ```bash
 npm login
 npm publish --access public
@@ -140,6 +144,7 @@ GitHub Actions allows you to automate publishing when a new release is created, 
 ### 1. Configure GitHub Secrets
 
 In your GitHub repository:
+
 - Go to **Settings > Secrets and variables > Actions**.
 - Add a new secret named `NPM_TOKEN` and paste your npm token here.
 
@@ -181,6 +186,7 @@ jobs:
 ```
 
 This workflow does the following:
+
 - Runs tests and checks on each release.
 - Automatically publishes the package to npm when a new GitHub release is created.
 
@@ -192,3 +198,4 @@ This workflow does the following:
 ## Conclusion
 
 Using GitHub Actions with npm makes it easier to maintain and publish your packages. With a CI/CD setup, you can automate repetitive tasks, ensuring your package is always up-to-date and available for users with each new release.
+

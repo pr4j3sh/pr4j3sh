@@ -3,6 +3,7 @@ title: JavaScript Package Managers
 description: NPM, Yarn, PNPM, and Bun
 date: Oct 06 2024
 ---
+
 JavaScript package managers play a crucial role in the modern development ecosystem, helping developers manage libraries, dependencies, and versions efficiently. With multiple options available—**NPM**, **Yarn**, **PNPM**, and now **Bun**—it's important to understand their differences and when to use each. In this blog, we’ll dive deep into these package managers, with a particular focus on **Bun**, a newcomer that claims to offer superior speed.
 
 ## What is a Package Manager?
@@ -13,7 +14,8 @@ A package manager is a tool that automates the process of installing, updating, 
 
 **NPM** is the default package manager for Node.js and the most widely used in the JavaScript ecosystem. It is included with Node.js installations and offers a massive repository of JavaScript packages. With its extensive library and global usage, NPM has set the standard for package management.
 
-### Key Features of NPM:
+### Key Features of NPM
+
 - **Large ecosystem**: Access to over a million open-source packages.
 - **Automatic dependency resolution**: Handles nested dependencies automatically.
 - **Scripts**: Allows developers to define custom scripts for tasks like testing or building applications.
@@ -25,7 +27,8 @@ While NPM has been the industry standard, developers often find it slower compar
 
 [Yarn](https://github.com/prajeshElEvEn/archives/tree/master/src/js/server/node/yarn) was introduced by Facebook as a faster and more reliable alternative to NPM. Yarn improved package installation speed and introduced deterministic installations, meaning the same versions of dependencies are installed across all environments.
 
-### Key Features of Yarn:
+### Key Features of Yarn
+
 - **Deterministic installs**: Uses a `yarn.lock` file for consistent installations.
 - **Offline caching**: Stores downloaded packages locally, allowing for faster re-installation.
 - **Parallel installs**: Yarn installs dependencies concurrently, which boosts performance.
@@ -35,7 +38,8 @@ While NPM has been the industry standard, developers often find it slower compar
 
 [PNPM](https://github.com/prajeshElEvEn/archives/tree/master/src/js/server/node/pnpm) takes a unique approach to managing dependencies by storing them in a central location and creating hard links instead of duplicating files in every project’s `node_modules` folder. This greatly reduces disk space usage, making it a popular choice for large monorepos.
 
-### Key Features of PNPM:
+### Key Features of PNPM
+
 - **Efficient storage**: Shares dependencies between projects by using a global store.
 - **Strict dependency resolution**: Ensures that every package gets its exact dependencies.
 - **Fast installations**: With its linked node_modules structure, PNPM is faster and lighter on disk space.
@@ -49,7 +53,7 @@ While NPM has been the industry standard, developers often find it slower compar
 Bun is written in **Zig**, a low-level systems programming language, which contributes to its speed and efficiency. Bun avoids much of the overhead found in traditional JavaScript runtimes and package managers by using optimized memory management and fast I/O operations. Below are some factors contributing to Bun's speed:
 
 1. **Native Code**: Unlike other package managers that rely on JavaScript, Bun is implemented in Zig, giving it low-level control over system resources and eliminating performance bottlenecks.
-  
+
 2. **Parallelized Tasks**: Bun aggressively parallelizes tasks like fetching, installing, and resolving dependencies, utilizing modern CPUs more effectively than other managers.
 
 3. **Efficient Dependency Resolution**: Bun can resolve dependencies significantly faster by using optimized algorithms, reducing the time it takes to install packages.
@@ -98,6 +102,7 @@ Bun is designed to be a drop-in replacement for other package managers, but it d
 While **NPM**, **Yarn**, and **PNPM** are all excellent package managers, **Bun** brings a fresh perspective to the table with its focus on speed and performance. If you’re working on time-sensitive projects, or large-scale applications, Bun’s performance improvements will significantly boost your productivity.
 
 However, each package manager has its strengths:
+
 - **NPM** is still the default and works well for most projects.
 - **Yarn** offers more consistent and faster installations than NPM.
 - **PNPM** is an excellent choice for monorepos, saving disk space with its unique dependency management.
@@ -105,3 +110,4 @@ However, each package manager has its strengths:
 In contrast, **Bun** is designed for developers who value speed above all. As it matures, it’s likely to become a preferred tool for JavaScript and TypeScript developers seeking performance improvements across their development workflow.
 
 Bun is poised to be a game-changer, and as it continues to evolve, it could redefine how we handle JavaScript development, offering an all-in-one solution that’s fast, efficient, and powerful.
+

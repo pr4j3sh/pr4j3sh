@@ -3,6 +3,7 @@ title: Ruby on Arch Linux
 description: Install Ruby via rbenv on Arch Linux
 date: Oct 08 2024
 ---
+
 Installing Ruby using `rbenv` is a recommended way to manage multiple versions of Ruby efficiently, especially on Arch Linux. With `rbenv`, you can seamlessly switch between Ruby versions without interfering with the system’s default setup. This guide will walk you through installing `rbenv` and setting up Ruby on your Arch system.
 
 ### 1. Install `rbenv`
@@ -71,3 +72,4 @@ ruby -v
 You should see the installed Ruby version (e.g., `ruby 3.2.5`) displayed in your terminal.
 
 With these steps, you've successfully installed Ruby using `rbenv` on Arch Linux. You can now use Ruby for your projects without affecting system-level settings. Happy coding
+

@@ -3,15 +3,18 @@ title: CPP Web Server
 description: CRUD Operations in C++ Using CppRestSDK
 date: Oct 07 2024
 ---
+
 CRUD (Create, Read, Update, Delete) operations are the foundation of any RESTful API. In this blog, we will explore how to implement CRUD operations using the CppRestSDK in C++. The `cpprestsdk` library allows us to easily build RESTful services and handle HTTP requests and responses.
 
 We will build an API with the following endpoints:
+
 - **GET** `/api/read` – For reading data.
 - **POST** `/api/create` – For creating data.
 - **PUT** `/api/update/{id}` – For updating data by ID.
 - **DELETE** `/api/delete/{id}` – For deleting data by ID.
 
 Checkout [source code](https://github.com/prajeshElEvEn/archives/tree/master/src/cpp/web/server).
+
 ## Setting Up the Project
 
 First, you need to have `cpprestsdk` installed. You can install it on Arch using yay:
@@ -19,6 +22,7 @@ First, you need to have `cpprestsdk` installed. You can install it on Arch using
 ```bash
 yay -S cpprestsdk
 ```
+
 > [Source](https://github.com/microsoft/cpprestsdk)
 
 Next, create a project directory and set up the necessary files. Here’s an example `main.cpp` file that implements the CRUD operations.
@@ -170,3 +174,4 @@ You can test this API using `curl` or Postman.
 ### Conclusion
 
 In this blog, we covered how to implement CRUD operations using `cpprestsdk` in C++. These operations are the core of any RESTful service, and CppRestSDK makes it easy to handle them. You can expand this base to build more complex APIs tailored to your needs.
+

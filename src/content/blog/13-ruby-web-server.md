@@ -129,13 +129,15 @@ You can now make requests to the following endpoints:
   ```
 
 - **DELETE request**:
+
   ```bash
   curl -X DELETE http://127.0.0.1:3000/api/delete/1
   ```
+
   Response:
+
   ```json
   { "message": "delete", "id": "1" }
   ```
 
 With these steps, you've successfully created a web server using Ruby on Rails that handles basic API requests.
-

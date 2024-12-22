@@ -13,7 +13,7 @@ In this blog, we will explore the creation of a simple chat application using th
 
 The User Datagram Protocol (UDP) is one of the core protocols of the Internet Protocol (IP) suite. Unlike its counterpart, Transmission Control Protocol (TCP), UDP is a connectionless protocol that allows for the transmission of messages (datagrams) without establishing a connection. This makes UDP faster but less reliable since there is no guarantee that messages will be delivered in order or at all.
 
-### Key Features of UDP:
+### Key Features of UDP
 
 - **Connectionless**: No need to establish a connection before sending data.
 - **Unreliable**: Messages may be lost, duplicated, or arrive out of order.
@@ -153,4 +153,3 @@ Before running the chat application, ensure you have Ruby installed on your mach
 This simple UDP chat application demonstrates the basics of using UDP for real-time communication. While UDP is faster and requires less overhead, remember that it does not guarantee message delivery. This project can be expanded upon by adding features such as user authentication, message history, or even a graphical user interface.
 
 Feel free to explore and build upon this foundation for your own applications!
-

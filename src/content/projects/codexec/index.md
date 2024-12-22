@@ -5,6 +5,7 @@ date: Oct 14 2024
 demoURL: https://pypi.org/project/codexec/
 repoURL: https://github.com/pr4j3sh/codexec
 ---
+
 ![codexec](./cover.png)
 
 As developers, we often deal with multiple programming languages, each with its own setup and execution process. Managing all these environments can be tedious, especially when switching between projects. Wouldn't it be great to have a single tool that compiles and runs your code, regardless of the language, from the comfort of your terminal?
@@ -63,6 +64,7 @@ CodExec will pass the content of the input file to your code during execution, a
 ### Supported Languages
 
 CodExec currently supports the following languages:
+
 - **C** (.c)
 - **C++** (.cpp)
 - **Java** (.java)
@@ -98,3 +100,4 @@ Once installed, you're ready to run code across multiple languages without needi
 Whether you're a student, developer, or just someone experimenting with different programming languages, CodExec makes executing code simple and efficient. It removes the hassle of setting up multiple environments, allowing you to focus on what matters—writing and running code.
 
 Give CodExec a try today, and simplify your coding workflow with this powerful command-line tool! If you run into any issues or have suggestions, feel free to contribute or open an issue on the CodExec GitHub repository.
+

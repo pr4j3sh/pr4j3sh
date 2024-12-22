@@ -57,9 +57,9 @@ jobs:
         run: npm ci
       - name: Set environment variable
         run: |
-		    echo "SECRET_ONE=${{ secrets.SECRET_ONE }}" >> .env.local
-		    echo "SECRET_TWO=${{ secrets.SECRET_TWO }}" >> .env.local
-		    echo "SECRET_THREE=${{ secrets.SECRET_THREE }}" >> .env.local
+      echo "SECRET_ONE=${{ secrets.SECRET_ONE }}" >> .env.local
+      echo "SECRET_TWO=${{ secrets.SECRET_TWO }}" >> .env.local
+      echo "SECRET_THREE=${{ secrets.SECRET_THREE }}" >> .env.local
       - name: Build
         run: npm run build
       - name: Setup Pages
@@ -94,4 +94,3 @@ git push origin master
 ```
 
 With these steps, your Vite project is set up to automatically deploy to GitHub Pages with each push to the master branch, thanks to the powerful combination of Vite and GitHub Actions. Happy deploying
-

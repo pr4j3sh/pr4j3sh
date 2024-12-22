@@ -4,16 +4,18 @@ description: Understanding Bubble Sort
 date: Dec 18 2024
 draft: false
 ---
+
 Bubble sort is a straightforward sorting algorithm that works by repeatedly swapping adjacent elements if they are in the wrong order. With each iteration, the largest element “bubbles” up to its proper location. While simple to implement, it is not suited for large datasets due to its worst-case and average time complexity of O(n²).
 
 ### Complexity
+
 - **Time Complexity**:
   - Best Case: **O(n)** (when the array is already sorted)
   - Worst Case: **O(n²)**
   - Average Case: **O(n²)**
 - **Space Complexity**: **O(1)**
 
-### How it Works:
+### How it Works
 
 1. Go through the array, one value at a time.
 2. For each value, compare it with the next value.

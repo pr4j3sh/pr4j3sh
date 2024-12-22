@@ -42,3 +42,16 @@ designing systems
 - high level design
 - understading bottlenecks
 - scaling
+
+perrofmance vs scalability
+Scalability is being able to handle large amounts of users/data/traffic. Performance is about speed.
+ If you have a performance problem, your system is slow for a single user.
+If you have a scalability problem, your system is fast for a single user but slow under heavy load.
+cap theorem
+- c - consistency
+- a - availability
+- p - partition tolerance
+
+latency vs throughput
+both measures of a system’s performance
+Latency refers to the amount of time it takes for a system to respond to a request. Throughput refers to the number of requests that a system can handle at the same time

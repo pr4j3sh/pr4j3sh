@@ -3,11 +3,13 @@ title: Understanding Parallel Computing
 description: A Dive into GNU Parallel and Multithreading with OpenMP in C++
 date: Oct 06 2024
 ---
+
 Parallel computing is a form of computation where many calculations are performed simultaneously. By breaking tasks into smaller chunks and running them concurrently, parallel computing maximizes the use of resources, making programs faster and more efficient. In modern computing, parallelism is especially useful for complex data processing, machine learning, scientific simulations, and more.
 
 This blog explores the basics of parallel computing, particularly using **GNU Parallel** and **multithreading** with **OpenMP** in C++.
 
 Checkout [source code](https://github.com/prajeshElEvEn/archives/tree/master/src/cpp/multithreading)
+
 ## What is Parallel Computing?
 
 Parallel computing involves dividing a larger problem into smaller, independent tasks that can be executed concurrently. This is achieved using multiple processors or threads. By utilizing parallelism, you can significantly reduce the time it takes to complete a task, as multiple parts of the task are being processed at the same time.
@@ -15,6 +17,7 @@ Parallel computing involves dividing a larger problem into smaller, independent 
 ## Forms of Parallelism
 
 There are two main types of parallelism:
+
 1. **Data Parallelism**: Involves distributing subsets of data across multiple cores and performing the same operation on each subset simultaneously.
 2. **Task Parallelism**: Involves dividing a task into sub-tasks, each of which can be executed on separate threads or processors.
 
@@ -29,6 +32,7 @@ parallel echo "Processing {}" ::: task1 task2 task3 task4
 ```
 
 In the above command:
+
 - `parallel` is the command for GNU Parallel.
 - `echo "Processing {}"` is the operation that will be run in parallel for each task.
 - `::: task1 task2 task3 task4` defines the tasks that will be processed concurrently.
@@ -40,6 +44,7 @@ A more generic approach for running a command with parallel (say 10 times):
 ```bash
 parallel -j 10 <cmd> ::: {1..10}
 ```
+
 > Here the `<cmd>` runs 10 times
 
 ## Multithreading in C++ Using OpenMP
@@ -74,6 +79,7 @@ int main() {
 ```
 
 In this example:
+
 - The **`#pragma omp parallel for`** directive tells the compiler to parallelize the loop.
 - The **`reduction(+:sum)`** clause ensures that the `sum` variable is correctly handled across different threads, combining the results from each thread.
 
@@ -113,12 +119,14 @@ int main() {
 ```
 
 In this case:
+
 - **`omp_get_thread_num()`** returns the ID of the current thread.
 - The **`#pragma omp parallel`** directive creates multiple threads that run concurrently.
 
 ## When to Use Parallel Computing?
 
 Parallel computing is most useful when:
+
 - The task involves large datasets or computationally intensive operations.
 - You have multiple cores available on your system.
 - Your application needs to process multiple independent tasks simultaneously (like batch processing, file conversions, or matrix operations).
@@ -128,3 +136,4 @@ Parallel computing is most useful when:
 Parallel computing is essential for improving performance in modern applications. By leveraging tools like **GNU Parallel** for shell operations and **OpenMP** for C++ programs, you can implement parallelism with ease. OpenMP makes it particularly simple to add multithreading to your C++ code with minimal effort, allowing you to take full advantage of your CPU’s cores.
 
 Whether you're working on scientific simulations, data analysis, or building high-performance applications, understanding and utilizing parallel computing will help you optimize your work efficiently.
+

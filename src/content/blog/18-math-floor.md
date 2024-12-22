@@ -3,6 +3,7 @@ title: Math.floor() Saved the Day
 description: Math.floor() Saves the Day in My Pomodoro Timer
 date: Nov 08 2024
 ---
+
 I recently created a Pomodoro timer app. You can check it out [here](https://pr4j3sh.github.io/pomodoro/). It's a simple timer that follows the Pomodoro technique, cycling through work and break intervals:
 
 - Work: 25 minutes
@@ -34,11 +35,11 @@ function startTimer() {
 }
 ```
 
-This worked fine until I tested the app on a real clock and realized something crucial — when the tab was in the background or minimized, the timer would stop. Browsers often pause JavaScript timers in inactive tabs to save memory, which meant my timer wouldn't run accurately when the user wasn't actively looking at it. 
+This worked fine until I tested the app on a real clock and realized something crucial — when the tab was in the background or minimized, the timer would stop. Browsers often pause JavaScript timers in inactive tabs to save memory, which meant my timer wouldn't run accurately when the user wasn't actively looking at it.
 
 ## Moving to `setTimeout`
 
-To solve this issue, I switched to `setTimeout`. This allowed me to manually call the timer functions with a delay of 1000ms. The idea was that when one interval (work or break) completed, I could trigger the next one with the right delay. This worked, but it still had some drawbacks, particularly with handling background tabs and managing the state of the timer. 
+To solve this issue, I switched to `setTimeout`. This allowed me to manually call the timer functions with a delay of 1000ms. The idea was that when one interval (work or break) completed, I could trigger the next one with the right delay. This worked, but it still had some drawbacks, particularly with handling background tabs and managing the state of the timer.
 
 ## Enter `requestAnimationFrame`
 
@@ -95,3 +96,4 @@ By switching to `requestAnimationFrame` and using `Math.floor()` to manage the s
 Give it a try in your own projects, and you'll see how well it works!
 
 Feel free to visit the app and experience the Pomodoro timer in action: [Pomodoro Timer](https://pr4j3sh.github.io/pomodoro/)
+

@@ -52,7 +52,7 @@ ListNode* findMiddle(ListNode* head) {
 }
 ```
 
-### How the Code Works:
+### How the Code Works
 
 1. We initialize two pointers, `slow` and `fast`, both starting at the head of the list.
 2. We loop through the list as long as `fast` and `fast->next` are not null.
@@ -68,4 +68,3 @@ To solidify your understanding of this algorithm, practice solving problems rela
 The Tortoise and Hare method is a powerful technique for finding the middle of a linked list with minimal overhead. Its efficiency and simplicity make it a favorite among programmers tackling linked list problems. Whether you're preparing for coding interviews or working on your own projects, understanding this algorithm is invaluable.
 
 Feel free to experiment with the code and explore variations of linked list operations. Happy coding!
-

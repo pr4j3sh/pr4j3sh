@@ -3,7 +3,8 @@ title: "LXC: Linux Container"
 description: Getting Started with LXD on Arch Linux
 date: Nov 06 2024
 ---
-LXD is a system container manager that provides a user-friendly way to create and manage Linux containers. While often confused with `LXC`, `LXD` offers more advanced features on top of `LXC` and provides a higher-level interface for managing containers. In this guide, we'll go through setting up and managing LXD on Arch Linux. 
+
+LXD is a system container manager that provides a user-friendly way to create and manage Linux containers. While often confused with `LXC`, `LXD` offers more advanced features on top of `LXC` and provides a higher-level interface for managing containers. In this guide, we'll go through setting up and managing LXD on Arch Linux.
 
 ## What is LXD vs. LXC?
 
@@ -93,6 +94,7 @@ lxc image alias list images: 'alpine'
 ```
 
 > `ubuntu` and `images` are two image repositories.
+
 ### Launching and Managing Containers
 
 Launch a container with:
@@ -197,3 +199,4 @@ lxc delete mycontainer/<snap_name>
 ## Conclusion
 
 LXD is a powerful tool for container management, providing an efficient, user-friendly approach to Linux containers. Arch Linux users can leverage these commands and configurations to quickly set up, manage, and interact with containers. For advanced setups and options, consider diving deeper into the [LXD documentation](https://linuxcontainers.org/lxd/docs/master/) to unlock the full potential of your LXD environment.
+

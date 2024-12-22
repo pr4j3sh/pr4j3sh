@@ -3,11 +3,13 @@ title: Building a CRUD Application with Firebase
 description: Firebase Firestore in Vite + React
 date: Oct 06 2024
 ---
+
 Firebase is a comprehensive platform for building web and mobile applications. It provides tools for authentication, databases, analytics, and much more. One of its key features is Firestore, a NoSQL database designed for real-time synchronization and scalable cloud applications. In this blog, we’ll explore how to integrate Firestore with a **Vite + React** application and implement **CRUD operations** (Create, Read, Update, Delete).
 
 We'll use Firebase’s Firestore for data storage, and Vite’s fast build tool to power the React app. This blog will cover setting up Firebase and implementing basic CRUD operations.
 
 Checkout [source code](https://github.com/prajeshElEvEn/archives/tree/master/src/js/fullstack/vite-firebase)
+
 ## Setting Up Firebase in a Vite React App
 
 Before diving into the CRUD operations, you need to set up Firebase in your Vite + React project. We’ll configure Firebase and connect to Firestore.
@@ -49,7 +51,7 @@ const analytics = getAnalytics(app);
 export { db, analytics };
 ```
 
-Ensure that you’ve added your Firebase environment variables in the `.env` file. 
+Ensure that you’ve added your Firebase environment variables in the `.env` file.
 
 ## Implementing CRUD Operations with Firestore
 
@@ -231,9 +233,11 @@ This example removes the document with the matching `id` from the Firestore coll
 ### Conclusion
 
 With Firebase Firestore and React, you can easily implement full **CRUD** functionality. We explored how to:
+
 - Create new documents using `addDoc`
 - Read data from Firestore using `getDocs`
 - Update documents using `updateDoc`
 - Delete documents with `deleteDoc`
 
 Using Firebase with Vite enables a fast development experience while providing a scalable and efficient database solution. By structuring your code with separate components for each operation, you can maintain a clean and modular codebase that’s easy to extend as your app grows.
+

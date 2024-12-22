@@ -4,6 +4,7 @@ description: A Dive into Docker
 date: Nov 09 2024
 draft: false
 ---
+
 Docker is a powerful tool that allows you to package and run applications in containers, which are lightweight, portable environments that run consistently on any system. Here’s a quick guide to some commonly used Docker commands and flags.
 
 #### 1. **Running a Docker Container**
@@ -32,7 +33,6 @@ To set environment variables and map ports:
 docker run --env POSTGRES_PASSWORD=eleven --publish 8080:5432
 ```
 
-
 #### 2. **Connecting to a Database Container with psql**
 
 If you're running a Postgres container, you can connect to it using `psql`:
@@ -40,7 +40,6 @@ If you're running a Postgres container, you can connect to it using `psql`:
 ```bash
 psql -h localhost -p 8080 -U postgres
 ```
-
 
 #### 3. **Common Docker Run Flags**
 
@@ -53,13 +52,12 @@ Here are some commonly used flags when running a container:
 - `--rm`: Remove the container after it stops.
 - `--interactive`: Keep the container running interactively.
 - `--tty`: Allocate a TTY for the container (typically used with `-it`).
-  
+
 To run interactively, you can combine `-it`:
 
 ```bash
 docker run -it ubuntu bash
 ```
-
 
 #### 4. **Listing Containers**
 
@@ -68,7 +66,6 @@ To list all containers (running or stopped):
 ```bash
 docker ps -a
 ```
-
 
 #### 5. **Starting and Stopping Containers**
 
@@ -84,7 +81,6 @@ To remove a container:
 docker rm <container_id>
 ```
 
-
 #### 6. **Attaching to a Container**
 
 You can attach to a running container and interact with it:
@@ -92,7 +88,6 @@ You can attach to a running container and interact with it:
 ```bash
 docker attach <container_id>
 ```
-
 
 #### 7. **Building a Custom Docker Image**
 
@@ -104,7 +99,6 @@ FROM ubuntu:20.04
 RUN apt update && apt upgrade -y && apt install iproute2 -y
 EOF
 ```
-
 
 #### 8. **Working with Docker Volumes**
 
@@ -138,7 +132,6 @@ To prune unused volumes:
 docker volume prune
 ```
 
-
 #### 9. **Mounting Bind Volumes**
 
 You can mount directories from the host system directly into the container using a bind mount:
@@ -153,5 +146,5 @@ Alternatively, you can use `-v` for the same purpose:
 docker run -it --rm -v path/on/host:/path/on/container ubuntu:20.04
 ```
 
-
 These are just a few of the many commands and flags that Docker offers. By learning these basics, you'll be able to start using Docker more effectively and simplify your container management tasks. Happy containerizing
+

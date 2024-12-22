@@ -4,9 +4,11 @@ description: Understanding Insertion Sort
 date: Dec 20 2024
 draft: false
 ---
+
 Insertion sort is a simple and intuitive algorithm that builds a sorted array one element at a time. Inspired by the way we organize playing cards, it works efficiently for small or nearly sorted datasets. Below is the implementation of insertion sort in both ascending and descending order using C++.
 
 ### Complexity
+
 - **Time Complexity**:
   - Best Case: **O(n)**
   - Worst Case: **O(n^2)**
@@ -50,4 +52,3 @@ void desc(vector<int> &v) {
   }
 }
 ```
-
