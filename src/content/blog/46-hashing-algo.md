@@ -1,6 +1,6 @@
 ---
 title: Hashing Algorithms
-description: How hashing is performed
+description: How Hashing Is Performed
 date: 28 Dec 2024
 ---
 

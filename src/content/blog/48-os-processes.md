@@ -1,6 +1,6 @@
 ---
 title: OS Processes
-description: Process and Threads
+description: Processes and Threads
 date: 26 Dec 2024
 ---
 

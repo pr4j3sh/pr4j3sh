@@ -1,6 +1,6 @@
 ---
 title: Hashing, Encoding, Encryption
-description: What is Cryptograpgy
+description: Understanding Cryptography
 date: 26 Dec 2024
 ---
 

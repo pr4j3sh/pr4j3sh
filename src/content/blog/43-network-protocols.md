@@ -1,6 +1,6 @@
 ---
 title: Network Protocols
-description: Know about some Protocols
+description: Know About Some Protocols
 date: 26 Dec 2024
 draft: true
 ---

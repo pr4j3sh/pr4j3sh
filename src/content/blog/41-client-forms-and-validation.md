@@ -1,6 +1,6 @@
 ---
 title: Forms and Validations
-description: Client side forms and their validations
+description: Client Side Forms and Their Validations
 date: Dec 23 2024
 draft: true
 ---

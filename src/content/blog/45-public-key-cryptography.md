@@ -1,6 +1,6 @@
 ---
 title: Public Key Cryptography
-description: How data is ecrypted over communication
+description: How Data is Encrypted Over Communication
 date: 28 Dec 2024
 ---
 

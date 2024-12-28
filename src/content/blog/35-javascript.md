@@ -2,44 +2,158 @@
 title: JavaScript
 description: A Dive into JavaScript
 date: Dec 17 2024
-draft: true
 ---
 
-three pillars
+JavaScript (JS) is one of the most versatile and widely used programming languages today. As an implementation of the ECMAScript standard, it enables interactive web development and runs in various environments, including browsers and Node.js. With its multi-paradigm nature, JavaScript allows developers to use procedural, object-oriented, and functional programming approaches seamlessly.
 
-- scopes
-- objects
-- types
-  JS is an implementation of the ECMAScript standard (version ES2019 as of this writing), which is guided by the TC39 committee and hosted by ECMA. It runs in browsers and other JS environments such as Node.js.
+### Writing Your First JavaScript Program
 
-JS is a multi-paradigm language, meaning the syntax and capabilities allow a developer to mix and match (and bend and reshape!) concepts from various major paradigms, such as procedural, object-oriented (OO/classes), and functional (FP).
+A simple "Hello, World!" in JavaScript:
 
-JS is a compiled language, meaning the tools (including the JS engine) process and verify a program (reporting any errors!) before it executes.
-
-Values come in two forms in JS: primitive and object.
-
-bigint (big-integer) primitive type, which is used for storing arbitrarily large numbers.
-JS array indices are 0-based
-In addition to strings, numbers, and booleans, two other primitive values in JS programs are null and undefined
-final primitive value to be aware of is a symbol, Symbols are almost exclusively used as special keys on objects
-
-arrays are a special type of object
-arrays can hold any value type, either primitive or object (including other arrays), even functions
-
-Objects are an unordered, keyed collection of any various values. In other words, you access the element by a string location name (aka "key" or "property") rather than by its numeric position (as with arrays).
-
-```js
-typeof 42; // "number"
-typeof "abc"; // "string"
-typeof true; // "boolean"
-typeof undefined; // "undefined"
-typeof null; // "object" -- oops, bug!
-typeof { a: 1 }; // "object"
-typeof [1, 2, 3]; // "object"
-typeof function hello() {}; // "function"
+```javascript
+console.log("Hello, World!");
 ```
 
-Converting from one value type to another, such as from string to number, is referred to in JS as "coercion".
+To run this, include it in an HTML file using `<script>` or use a JavaScript runtime like Node.js:
 
-<https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/get-started/ch2.md#declaring-and-using-variables>
+```bash
+node hello.js
+```
 
+### The Three Pillars of JavaScript
+
+#### Scopes
+
+Scope defines where variables and functions can be accessed. JavaScript has two main types of scope:
+
+- **Global Scope:** Variables declared outside any function or block are globally accessible.
+- **Local Scope:** Variables declared inside a block (using `let` or `const`) or a function are limited to that context.
+
+```javascript
+let globalVar = "I am global";
+function demo() {
+  let localVar = "I am local";
+  console.log(globalVar); // Accessible
+  console.log(localVar); // Accessible
+}
+console.log(globalVar); // Accessible
+// console.log(localVar); // Error: Not defined
+```
+
+#### Objects
+
+Objects in JavaScript are unordered collections of key-value pairs, allowing access by keys.
+
+```javascript
+let obj = { name: "JS", type: "language" };
+console.log(obj.name); // "JS"
+console.log(obj["type"]); // "language"
+```
+
+Arrays are a special type of object, using numeric indices to access values:
+
+```javascript
+let arr = [1, "hello", true];
+console.log(arr[0]); // 1
+console.log(typeof arr); // "object"
+```
+
+#### Types
+
+JavaScript values are categorized into two types:
+
+- **Primitive Types:** Number, String, Boolean, Null, Undefined, BigInt, and Symbol.
+- **Objects:** Includes arrays, functions, and custom objects.
+
+```javascript
+console.log(typeof 42); // "number"
+console.log(typeof "abc"); // "string"
+console.log(typeof null); // "object" (historical bug)
+console.log(typeof [1, 2, 3]); // "object"
+console.log(typeof function () {}); // "function"
+```
+
+JavaScript also supports **coercion**, which is the conversion of one type to another:
+
+```javascript
+let num = "42";
+let converted = Number(num); // Explicit coercion
+console.log(+"42"); // Implicit coercion
+```
+
+### Conditionals
+
+Conditionals in JavaScript use `if`, `else if`, and `else`.
+
+```javascript
+let value = 10;
+if (value > 0) {
+  console.log("Positive number");
+} else if (value < 0) {
+  console.log("Negative number");
+} else {
+  console.log("Zero");
+}
+```
+
+### Loops
+
+JavaScript provides `for`, `while`, and `do-while` loops.
+
+```javascript
+// For loop
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+// While loop
+let x = 5;
+while (x > 0) {
+  console.log(x);
+  x--;
+}
+
+// Do-while loop
+let y = 3;
+do {
+  console.log(y);
+  y--;
+} while (y > 0);
+```
+
+### Functions
+
+Functions in JavaScript are defined using the `function` keyword or as arrow functions.
+
+```javascript
+// Function declaration
+function greet(name) {
+  return `Hello, ${name}!`;
+}
+
+// Arrow function
+const add = (a, b) => a + b;
+
+console.log(greet("JavaScript")); // Hello, JavaScript!
+console.log(add(5, 10)); // 15
+```
+
+### Additional Features
+
+- **BigInt:** Supports arbitrarily large numbers:
+
+  ```javascript
+  let bigNumber = 123456789012345678901234567890n;
+  console.log(typeof bigNumber); // "bigint"
+  ```
+
+- **Symbols:** Unique and immutable values, often used as object keys:
+
+  ```javascript
+  let sym = Symbol("key");
+  console.log(typeof sym); // "symbol"
+  ```
+
+### Conclusion
+
+JavaScript is a dynamic, multi-paradigm language that continues to evolve with new features and standards. Its focus on flexibility, combined with its rich ecosystem, makes it a cornerstone of modern web development. Understanding its foundational concepts such as scopes, objects, and types is key to mastering this powerful language.
