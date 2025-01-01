@@ -1,5 +1,5 @@
 ---
-title: Marge Sort
+title: Merge Sort
 description: Understanding Merge Sort
 date: Dec 30 2024
 ---

@@ -2,7 +2,6 @@
 title: MySQL
 description: A Dive into MySQL
 date: Dec 17 2024
-draft: true
 ---
 
 ### **Introduction**
