@@ -14,3 +14,38 @@ features
 - matchmaking
 - forums/feed
 
+leaderboards huh
+
+- let's just show profiles
+
+  - rank
+  - avatar
+  - username
+  - repo count
+  - star count
+  - fork count
+  - watchers count
+  - followers count
+  - following count
+  - commits
+  - prs
+  - issues
+  - languages
+
+- calculating rank
+  - star count
+  - fork count
+  - watchers count
+  - commits
+  - prs
+  - issues
+
+new directive
+
+- check on api endpoints and api rate limts that we would require for this project
+
+some cues
+
+- use parallel fetching
+- use queue system
+- cache data
