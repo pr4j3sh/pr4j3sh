@@ -1,1 +1,25 @@
-@import url("https://pr4j3sh.github.io/ui/style.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Roboto Flex", serif;
+}
+
+body {
+  @apply text-xl bg-gray-950 text-gray-100 transition-all ease-in-out;
+}
+
+.container {
+  @apply m-auto max-w-lg flex flex-col gap-4 h-screen px-2 md:px-0;
+}
+
+main {
+  @apply flex flex-col gap-4 h-full justify-center;
+}
+
+a {
+  @apply underline;
+}
